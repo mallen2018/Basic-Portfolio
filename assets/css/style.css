@@ -1,0 +1,70 @@
+#border {
+    border-style: solid;
+    border-color: teal;
+}
+
+/* Add a black background color to the top navigation */
+.topborder {
+    position: fixed;
+    padding: 14px 16px;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    position: fixed;
+    padding: 14px 16px;
+    top: 0;
+    width: 100%;
+    background-image: -o-repeating-linear-gradient();
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: teal;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+
+}
+/* Add sticky name block*/
+.nameblock {
+    top:-15;
+    bottom:0;
+    color: teal;
+    text-align: justify;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Georgia', Times, Times New Roman, serif; 
+}
+
+/* Add a color to the active link */
+.topnav a.active {
+    background-color: teal;
+    color: white;
+}
+
+/* Add sticky footer*/
+.footer {
+    position: fixed;
+    padding: 14px 16px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+/*column */
+.column {
+    margin: auto;
+    width: 960px;
+    background-color: teal;
+    text-align: center;
+}
