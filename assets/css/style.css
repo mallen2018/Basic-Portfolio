@@ -4,7 +4,7 @@
 }
 /*full border on top*/
 .topborder {
-    position: fixed;
+    position: absolute;
     padding: 14px 16px;
     top: 0;
     width: 100%;
@@ -14,12 +14,12 @@
 }
 /* Add sticky name block*/
 .nameblock {
-    position: fixed;
+    position: relative;
     top: 0px;
     left: 0px;
     z-index: 200;
     float: left;
-    margin: 1%;
+    margin: 1%; 
     padding: 0px;
     color: teal;
     text-align: center;
@@ -28,7 +28,7 @@
 }
 /*background color to the top navigation */
 .topnav {
-    position: fixed;
+    position: absolute;
     padding: 14px 16px;
     top: 0;
     width: 100%;
@@ -67,7 +67,7 @@
     position: relative;
     display:block;
     margin: auto;
-    height: 100%;
+    height: 80%%;
     width: 80%;
     top:0;
     bottom:0;
@@ -86,6 +86,7 @@
     color: white;
     font-family: 'Georgia',Times,Times New Roman,serif;
 }
+/*helps style the form page on contact page*/
 #form {
     position: absolute;
     z-index:300;
@@ -97,8 +98,53 @@
     font-family: 'Georgia',Times,Times New Roman,serif;
   }
 
-.logo {
-    float: left;
-    width: 33.33%;
+/* columns that will float next to each other*/
+.column {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
     padding: 5px;
 }
+
+/* Clear */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* media queries for siza scalability on different devices*/
+
+@media (max-width: 400px) {
+    html { background:black; }
+    .topnav a {width: 100%;
+               display: block;
+               float:none;
+               z-index: 300;
+               color: white;
+            }
+    .container { position: relative;}
+    .topnav a.active {
+        background-color: white;
+        color: teal;}
+    .nameblock {display:none}
+    .profilephoto {display:none;
+    }
+}
+  @media (min-width: 401px) and (max-width: 800px) {
+    html { background: gray; }
+    .topnav a {width: 100%;
+            display: block;
+            float:none;
+            z-index: 300;
+            color: white;
+            }
+    .container { position: relative;}
+    .topnav a.active {background-color: white;color: teal;}
+    .profilephoto {display:none;
+    }
+}
+  @media (min-width: 801px) {
+    html { background: transparent; }
+  }
